@@ -5,5 +5,8 @@ export default defineNuxtConfig({
     server: {
       port: 3001, // Port ที่ Nuxt จะใช้
       host: '0.0.0.0' // สำหรับให้สามารถเข้าถึงจาก IP อื่น
+  },
+  router: {
+    middleware: ['auth']
   }
 })
